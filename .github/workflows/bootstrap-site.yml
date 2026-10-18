@@ -2,7 +2,7 @@ name: Import initial website
 on:
   push:
     branches: [website-v1]
-    paths: ['_bootstrap/site.tar.xz.b64']
+    paths: ['_bootstrap/ready']
 permissions:
   contents: write
 jobs:
@@ -12,26 +12,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: website-v1
-      - name: Restore and verify the website bundle
+      - name: Restore verified source and original PDF
         run: |
-          python - <<'PY'
+          python3 - <<'PY'
           import base64, hashlib, io, lzma, pathlib, tarfile
-          source = pathlib.Path('_bootstrap/site.tar.xz.b64')
-          packed = base64.b64decode(source.read_text(), validate=False)
-          expected = pathlib.Path('_bootstrap/sha256.txt').read_text().strip()
-          assert hashlib.sha256(packed).hexdigest() == expected, 'Bundle checksum mismatch'
+          parts = sorted(pathlib.Path('_bootstrap').glob('part-*.b64'))
+          assert len(parts) == 5, 'Incomplete website bundle'
+          encoded = ''.join(p.read_text().strip() for p in parts)
+          packed = base64.b64decode(encoded, validate=True)
+          assert hashlib.sha256(packed).hexdigest() == '5c34599bb432941d77d90530f513b4b67a6042313798ba181be5f60429aa2a79', 'Bundle checksum mismatch'
           with tarfile.open(fileobj=io.BytesIO(lzma.decompress(packed)), mode='r:') as archive:
               archive.extractall('.', filter='data')
           cv = pathlib.Path('assets/vladimir-latypov-cv.pdf').read_bytes()
           assert hashlib.sha256(cv).hexdigest() == '5b262974b89a5f2b39d031314cd2c8242c3123e8cc52d3e03690e7673ffd3205'
           PY
-          python scripts/build.py
-          python scripts/check.py
-      - name: Commit the complete source and original PDF to the review branch
+          python3 scripts/build.py
+          python3 scripts/check.py
+      - name: Commit website to the review branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets ru scripts content.json template.html index.html robots.txt sitemap.xml 404.html .gitignore .nojekyll README.md
-          git diff --cached --quiet && exit 0
+          git add assets ru scripts content.json index.html robots.txt sitemap.xml 404.html .gitignore .nojekyll README.md
           git commit -m 'Build first bilingual personal website with original CV'
           git push origin HEAD:website-v1
