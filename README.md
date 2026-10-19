@@ -13,7 +13,7 @@ This first version deliberately has no JavaScript framework, package dependencie
 2. Introductory/UI text and layout live in `scripts/build.py`; design tokens and responsive rules in `assets/style.css`.
 3. Run `python3 scripts/build.py` and `python3 scripts/check.py`.
 4. Preview with `python3 -m http.server 8000` and open http://localhost:8000/.
-5. Commit both sources and generated `index.html`, `ru/index.html`, `sitemap.xml`.
+5. Commit both sources and generated `index.html`, `ru/index.html`, `sitemap.xml`. **Do not edit generated HTML directly:** the CI checks that the checked-in pages exactly match the generator output.
 
 Python 3.10+ is needed only for editing/building, not for hosting. GitHub Pages can publish `master` from the repository root; `.nojekyll` disables unnecessary Jekyll processing.
 
