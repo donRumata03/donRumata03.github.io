@@ -1,0 +1,17 @@
+name: Check website
+on:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and validate
+        run: |
+          python3 scripts/build.py
+          python3 scripts/check.py
+          git diff --exit-code -- index.html ru/index.html sitemap.xml
