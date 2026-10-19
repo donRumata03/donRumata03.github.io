@@ -1,26 +1,357 @@
 {
- "profiles":[["GitHub","https://github.com/donRumata03"],["Google Scholar","https://scholar.google.com/citations?user=0nONe0sAAAAJ"],["Hugging Face","https://huggingface.co/donRumata03"],["YouTube","https://www.youtube.com/@donrumata5299"],["Telegram","https://t.me/donRumata03"]],
- "papers":[
-  {"title":"On Approaches to Building Surrogate ODE Models for Diffusion Bridges","url":"https://arxiv.org/abs/2512.12671","meta":["2025 · Preprint","2025 · Препринт"],"text":["Interpretable models of diffusion dynamics. I co-led this work and focused on SINDy-based flow matching: learning symbolic differential equations using sparse regression.","Интерпретируемые модели диффузионной динамики. Со-руководил работой и занимался SINDy Flow Matching: поиском символьных дифференциальных уравнений с помощью разреженной регрессии."]},
-  {"title":"Evolutionary NAS for Convolutional KANs","url":"https://openreview.net/forum?id=Kg1CLjJsO0","meta":["2025 · Thesis","2025 · Диплом"],"text":["A tailored neural architecture search algorithm and new convolutional KAN layers. My bachelor's thesis, awarded Best Diploma at ITMO and presented at MathAI '25.","Специализированный алгоритм поиска нейросетевых архитектур и новые свёрточные KAN-слои. Мой бакалаврский диплом, отмеченный наградой «Лучший диплом ИТМО» и представленный на MathAI '25."]},
-  {"title":"Integration of evolutionary automated machine learning with structural sensitivity analysis for composite pipelines","url":"https://doi.org/10.1016/j.knosys.2024.112363","meta":["2024 · Journal","2024 · Журнал"],"text":["Published in Knowledge-Based Systems. I contributed to the concept, experiments and manuscript on sensitivity analysis for evolutionary AutoML pipelines.","Статья в Knowledge-Based Systems об анализе чувствительности для эволюционного AutoML. Участвовал в разработке концепции, экспериментах и написании текста."]}
- ],
- "experience":[
-  {"date":["Dec 2025 – present","Дек. 2025 – н. в."],"current":true,"org":["BayesGroup · HSE University","BayesGroup · НИУ ВШЭ"],"url":"https://bayesgroup.org/","role":["ML Researcher","Исследователь машинного обучения"],"text":["RL alignment of latent diffusion language models; coursework on learnable generation order and ensemble conditioning for protein design.","RL-выравнивание латентных диффузионных языковых моделей; курсовая об обучаемом порядке генерации и обусловливании на ансамбли для дизайна белков."]},
-  {"date":["Jan 2021 – present","Янв. 2021 – н. в."],"current":true,"org":["AO NPP KOMETEH","АО НПП «КОМЕТЕХ»"],"url":"https://kometeh.ru/","role":["Research engineer · optimal control & embedded systems","Инженер-исследователь · оптимальное управление и встраиваемые системы"],"text":["Development of a hard real-time synchronization device for communication systems using model predictive control. RTOS software in Rust and C++; FPGA modules in Clash/Haskell and Verilog; GUI development and hardware supervision.","Разработка устройства синхронизации для сетей связи в режиме жёсткого реального времени с управлением по прогнозирующей модели. ПО под RTOS на Rust и C++, FPGA-модули на Clash/Haskell и Verilog, участие в разработке GUI и сопровождении аппаратной части."]},
-  {"date":["Sep 2024 – Dec 2025","Сен. 2024 – дек. 2025"],"org":["NSS Lab · ITMO University","NSS Lab · Университет ИТМО"],"role":["ML Researcher · Maths in ML & Physics-Informed ML","Исследователь ML · Maths in ML & Physics-Informed ML"],"text":["Alexander Hvatov's group. SINDy flow matching, evolutionary NAS for convolutional KANs and conserved quantities in differential equations.","Группа Александра Хватова. SINDy Flow Matching, эволюционный NAS для свёрточных KAN и поиск сохраняющихся величин в дифференциальных уравнениях."]},
-  {"date":["Dec 2023 – Sep 2024","Дек. 2023 – сен. 2024"],"org":["NSS Lab · ITMO University","NSS Lab · Университет ИТМО"],"role":["ML Researcher · AutoML & evolutionary computation","Исследователь ML · AutoML и эволюционные вычисления"],"text":["Nikolay Nikitin's group. Evolutionary AutoML, cellular encodings, RL-based adaptation of evolutionary algorithms and contributions to GOLEM.","Группа Николая Никитина. Эволюционный AutoML, клеточные кодировки, RL-адаптация эволюционных алгоритмов и вклад в библиотеку GOLEM."]},
-  {"date":["Jul 2020 – Feb 2022","Июл. 2020 – фев. 2022"],"org":["Robotics Lab · ITMO University","Лаборатория робототехники · ИТМО"],"role":["Student Project Lead · evolutionary computation","Руководитель студенческого проекта · эволюционные вычисления"],"text":["Led a three-student team combining gradient-based and evolutionary optimization for image vectorization within a robotic painting project. Received the ITMO.STARS award.","Руководил командой из трёх студентов: сочетали градиентную и эволюционную оптимизацию для векторизации изображений в проекте роботизированного рисования. Получил награду ITMO.STARS."]}
- ],
- "teaching":[
-  {"meta":["2023–2024 · Alferov Lyceum","2023–2024 · ФТШ имени Алфёрова"],"title":["A course in Rust","Курс языка Rust"],"text":["Prepared and delivered most lectures and practical sessions, designed assignments and automated tests, and reviewed student code.","Подготовил и провёл большую часть лекций и практик, разрабатывал домашние задания и автоматические тесты, проверял код студентов."],"links":[["Course book / Материалы","https://pts-rust-course.github.io/rust-course-book/"],["YouTube","https://www.youtube.com/playlist?list=PLMdakVOACD9Ww337BXmG7AkozZalW0W--"]]},
-  {"meta":["Technical videos","Технические видео"],"title":["Microcontrollers & embedded systems","Микроконтроллеры и встраиваемые системы"],"text":["Videos about microcontrollers, alongside recordings of the Rust course, on my YouTube channel.","Видео о микроконтроллерах, а также записи курса Rust на моём YouTube-канале."],"links":[["YouTube","https://www.youtube.com/@donrumata5299"]]},
-  {"meta":["Community · YSDA","Сообщество · ШАД"],"title":["English speaking club","English speaking club"],"text":["I organize and facilitate the YSDA English speaking club in Saint Petersburg and online: conversations, discussions and games in English.","Организую и веду английский разговорный клуб ШАДа в Санкт-Петербурге и онлайн: беседы, дискуссии и игры на английском."],"links":[["Telegram","https://t.me/donRumata03"]]}
- ],
- "interests":[
-  {"title":["Music","Музыка"],"text":["I sing and play guitar, piano and percussion. I studied darbuka, djembe and bongos, and have played in small bands, including a post-ironic one. I also make musical adaptations and prepare guitar chord sheets for AmDm.","Пою, играю на гитаре, пианино и перкуссии. Учился играть на дарбуке, джембе и бонго; играл в небольших музыкальных группах, в том числе постироничной. Делаю музыкальные переделки и готовлю подборы аккордов для AmDm."]},
-  {"title":["Outdoors & sport","Спорт и природа"],"text":["Orienteering, alpine skiing, climbing, the gym and surfing. I also enjoy windsurfing, hiking and canoe trips, including organizing trips with friends.","Спортивное ориентирование, горные лыжи, скалолазание, спортзал и сёрфинг. А ещё виндсёрфинг, пешие и байдарочные походы, в том числе организация выездов с друзьями."]},
-  {"title":["Debates & discussions","Дебаты и дискуссии"],"text":["Competitive debating and conversations about economics, philosophy and society. I organize an economics discussion club with participant talks and recorded meetings.","Спортивные дебаты и обсуждения экономики, философии и общества. Организую экономический клуб с докладами участников и записями встреч."]},
-  {"title":["Making & sharing","Создавать и делиться"],"text":["DIY electronics, public speaking, travel and learning new things. I publish study notes and recordings from the economics club.","DIY-электроника, публичные выступления, путешествия и освоение нового. Публикую учебные конспекты и записи экономического клуба."]}
- ]
+  "profiles": [
+    [
+      "GitHub",
+      "https://github.com/donRumata03"
+    ],
+    [
+      "Google Scholar",
+      "https://scholar.google.com/citations?user=0nONe0sAAAAJ"
+    ],
+    [
+      "Telegram",
+      "https://t.me/donRumata03"
+    ],
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/don-rumata-558842353/"
+    ],
+    [
+      "YouTube",
+      "https://www.youtube.com/@donrumata5299"
+    ],
+    [
+      "Hugging Face",
+      "https://huggingface.co/donRumata03"
+    ],
+    [
+      "AmDm",
+      "https://amdm.ru/users/donRumata03/songs/"
+    ]
+  ],
+  "papers": [
+    {
+      "title": "FlowDraft: Flow-Map Drafting for Lossless Parallel Decoding",
+      "url": "https://www.skoltech.ru/en/news/summer-school-research-collaborations-skoltech-smiles-2026-concludes-suzhou",
+      "meta": [
+        "2026 · SMILES research project · Alfa-Bank Award",
+        "2026 · Проект SMILES · Приз Альфа-Банка"
+      ],
+      "text": [
+        "With Stepan Pavlenko and Yaroslav Pelekhov, I worked on flow-map drafting for lossless parallel decoding. The project received SMILES 2026's Alfa-Bank Award. A public paper is not yet linked here.",
+        "Вместе со Степаном Павленко и Ярославом Пелеховым работал над flow-map drafting для lossless parallel decoding. Проект получил приз Альфа-Банка на SMILES 2026. Пока ссылка ведёт на описание проекта, а не на текст статьи."
+      ],
+      "link_label": [
+        "Project announcement",
+        "Описание проекта"
+      ]
+    },
+    {
+      "title": "On Approaches to Building Surrogate ODE Models for Diffusion Bridges",
+      "url": "https://arxiv.org/abs/2512.12671",
+      "meta": [
+        "2025 · Preprint",
+        "2025 · Препринт"
+      ],
+      "text": [
+        "Interpretable models of diffusion dynamics. I co-led this work and focused on SINDy-based flow matching: learning symbolic differential equations using sparse regression.",
+        "Предлагаем интерпретируемые surrogate ODE models для diffusion dynamics. Я был одним из ведущих участников проекта и отвечал, в частности, за SINDy-based Flow Matching."
+      ]
+    },
+    {
+      "title": "Evolutionary NAS for Convolutional KANs",
+      "url": "https://openreview.net/forum?id=Kg1CLjJsO0",
+      "meta": [
+        "2025 · Thesis",
+        "2025 · Диплом"
+      ],
+      "text": [
+        "A tailored neural architecture search algorithm and new convolutional KAN layers. My bachelor's thesis, awarded Best Diploma at ITMO and presented at MathAI '25.",
+        "Разработал метод Neural Architecture Search (NAS) и новые convolutional KAN layers. По этой теме защитил бакалаврскую ВКР, получившую награду Best Diploma at ITMO, и выступил на MathAI ’25."
+      ]
+    },
+    {
+      "title": "Categorical Iterative Proportional Fitting via Discrete Diffusion Models",
+      "url": "https://box.skoltech.ru/index.php/s/LEeQhaRW6GYYuAa",
+      "meta": [
+        "2025 · SMILES School Projects Proceedings",
+        "2025 · Сборник работ SMILES"
+      ],
+      "text": [
+        "Co-developed C-IPF, a discrete-diffusion approach to Schrödinger bridges between categorical distributions. Published in the SMILES School Projects Proceedings 2025.",
+        "В составе команды разработал C-IPF — подход к discrete Schrödinger bridges на основе discrete diffusion models. Статья опубликована в SMILES School Projects Proceedings 2025."
+      ],
+      "link_label": [
+        "Paper (PDF)",
+        "Статья (PDF)"
+      ]
+    },
+    {
+      "title": "Integration of evolutionary automated machine learning with structural sensitivity analysis for composite pipelines",
+      "url": "https://doi.org/10.1016/j.knosys.2024.112363",
+      "meta": [
+        "2024 · Journal",
+        "2024 · Журнал"
+      ],
+      "text": [
+        "Published in Knowledge-Based Systems. I contributed to the concept, experiments and manuscript on sensitivity analysis for evolutionary AutoML pipelines.",
+        "Статья в Knowledge-Based Systems про sensitivity analysis в evolutionary AutoML pipelines. Мой вклад: разработка идеи, эксперименты и текст статьи."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "date": [
+        "Dec 2025 – present",
+        "Дек. 2025 – н. в."
+      ],
+      "current": true,
+      "org": [
+        "BayesGroup · HSE University",
+        "BayesGroup · НИУ ВШЭ"
+      ],
+      "url": "https://bayesgroup.org/",
+      "role": [
+        "ML Researcher",
+        "ML Researcher"
+      ],
+      "text": [
+        "RL alignment of latent diffusion language models; coursework on learnable generation order and ensemble conditioning for protein design.",
+        "Работаю над RL alignment для latent diffusion language models. Курсовой проект — learnable generation order и ensemble conditioning для protein design."
+      ]
+    },
+    {
+      "date": [
+        "Jan 2021 – present",
+        "Янв. 2021 – н. в."
+      ],
+      "current": true,
+      "org": [
+        "AO NPP KOMETEH",
+        "АО НПП «КОМЕТЕХ»"
+      ],
+      "url": "https://kometeh.ru/",
+      "role": [
+        "Research engineer · optimal control & embedded systems",
+        "Инженер-исследователь · embedded systems, optimal control"
+      ],
+      "text": [
+        "Development of a hard real-time synchronization device for communication systems using model predictive control. RTOS software in Rust and C++; FPGA modules in Clash/Haskell and Verilog; GUI development and hardware supervision.",
+        "Веду разработку устройства синхронизации для телекоммуникационных сетей с использованием Model Predictive Control (MPC). Пишу hard real-time / RTOS код на Rust и C++, FPGA-модули на Clash/Haskell и Verilog; также занимаюсь GUI и аппаратной частью."
+      ]
+    },
+    {
+      "date": [
+        "Sep 2024 – Dec 2025",
+        "Сен. 2024 – дек. 2025"
+      ],
+      "org": [
+        "NSS Lab · ITMO University",
+        "NSS Lab · Университет ИТМО"
+      ],
+      "role": [
+        "ML Researcher · Maths in ML & Physics-Informed ML",
+        "ML Researcher · Maths in ML & Physics-Informed ML"
+      ],
+      "text": [
+        "Alexander Hvatov's group. SINDy flow matching, evolutionary NAS for convolutional KANs and conserved quantities in differential equations.",
+        "Группа Александра Хватова. Работал над SINDy-based Flow Matching, Evolutionary NAS for Convolutional KANs и поиском инвариантов дифференциальных уравнений."
+      ]
+    },
+    {
+      "date": [
+        "Dec 2023 – Sep 2024",
+        "Дек. 2023 – сен. 2024"
+      ],
+      "org": [
+        "NSS Lab · ITMO University",
+        "NSS Lab · Университет ИТМО"
+      ],
+      "role": [
+        "ML Researcher · AutoML & evolutionary computation",
+        "ML Researcher · AutoML & Evolutionary Computation"
+      ],
+      "text": [
+        "Nikolay Nikitin's group. Evolutionary AutoML, cellular encodings, RL-based adaptation of evolutionary algorithms and contributions to GOLEM.",
+        "Группа Николая Никитина. Evolutionary AutoML, cellular encodings, RL-based hyperparameter adaptation и вклад в библиотеку GOLEM."
+      ]
+    },
+    {
+      "date": [
+        "Jul 2020 – Feb 2022",
+        "Июл. 2020 – фев. 2022"
+      ],
+      "org": [
+        "Robotics Lab · ITMO University",
+        "Лаборатория робототехники · ИТМО"
+      ],
+      "role": [
+        "Student Project Lead · evolutionary computation",
+        "Руководитель студенческого проекта · evolutionary computation"
+      ],
+      "text": [
+        "Led a three-student team combining gradient-based and evolutionary optimization for image vectorization within a robotic painting project. Received the ITMO.STARS award.",
+        "Руководил командой из трёх студентов в проекте по robotic painting. Мы комбинировали gradient-based и evolutionary optimization для векторизации изображений. Проект получил награду ITMO.STARS."
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "meta": [
+        "2023–2024 · Alferov Lyceum",
+        "2023–2024 · ФТШ имени Алфёрова"
+      ],
+      "title": [
+        "A course in Rust",
+        "Курс по Rust"
+      ],
+      "text": [
+        "Prepared and delivered most lectures and practical sessions, designed assignments and automated tests, and reviewed student code.",
+        "Прочитал большую часть лекций, провёл практические занятия, подготовил домашние задания и автотесты, проверял студенческий код."
+      ],
+      "links": [
+        [
+          "Course book / Материалы",
+          "https://pts-rust-course.github.io/rust-course-book/"
+        ],
+        [
+          "YouTube",
+          "https://www.youtube.com/playlist?list=PLMdakVOACD9Ww337BXmG7AkozZalW0W--"
+        ]
+      ]
+    },
+    {
+      "meta": [
+        "Technical videos",
+        "Технические видео"
+      ],
+      "title": [
+        "Microcontrollers & embedded systems",
+        "Микроконтроллеры и embedded-разработка"
+      ],
+      "text": [
+        "Videos about microcontrollers, alongside recordings of the Rust course, on my YouTube channel.",
+        "На YouTube публикую видео о микроконтроллерах и записи своего курса по Rust."
+      ],
+      "links": [
+        [
+          "YouTube",
+          "https://www.youtube.com/@donrumata5299"
+        ]
+      ]
+    },
+    {
+      "meta": [
+        "Community · YSDA",
+        "Сообщество · ШАД"
+      ],
+      "title": [
+        "English speaking club",
+        "English Speaking Club"
+      ],
+      "text": [
+        "I organize and facilitate the YSDA English speaking club in Saint Petersburg and online: conversations, discussions and games in English.",
+        "Организую English Speaking Club ШАДа в Петербурге и онлайн. Обсуждаем разные темы и играем на английском."
+      ],
+      "links": [
+        [
+          "Telegram",
+          "https://t.me/donRumata03"
+        ]
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "title": [
+        "Music",
+        "Музыка"
+      ],
+      "text": [
+        "I sing and play guitar, piano and percussion. I studied darbuka, djembe and bongos, and have played in small bands, including a post-ironic one. I also make musical adaptations and prepare guitar chord sheets for AmDm.",
+        "Пою, играю на гитаре, пианино и ударных. Учился играть на дарбуке, джембе и бонго; играл в нескольких музыкальных группах, включая постироничную. Подбираю аккорды и публикую их на AmDm."
+      ]
+    },
+    {
+      "title": [
+        "Outdoors & sport",
+        "Спорт и путешествия"
+      ],
+      "text": [
+        "Orienteering, alpine skiing, climbing, the gym and surfing. I also enjoy windsurfing, hiking and canoe trips, including organizing trips with friends.",
+        "Люблю спортивное ориентирование, горные лыжи, скалолазание, тренажёрный зал, сёрфинг и виндсёрфинг. Хожу в пешие и байдарочные походы, иногда сам организую выезды."
+      ]
+    },
+    {
+      "title": [
+        "Debates & discussions",
+        "Дебаты и дискуссии"
+      ],
+      "text": [
+        "Competitive debating and conversations about economics, philosophy and society. I organize an economics discussion club with participant talks and recorded meetings.",
+        "Участвую в турнирах по спортивным дебатам, люблю обсуждать экономику и философию. Организую экономический клуб: доклады, дискуссии, записи встреч."
+      ]
+    },
+    {
+      "title": [
+        "Making & sharing",
+        "Разные проекты"
+      ],
+      "text": [
+        "DIY electronics, public speaking, travel and learning new things. I publish study notes and recordings from the economics club.",
+        "Люблю DIY-электронику, путешествия, публичные выступления и пробовать новое. Публикую учебные конспекты и записи встреч экономического клуба."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "GOLEM",
+      "url": "https://github.com/aimclub/GOLEM",
+      "text": [
+        "An open-source framework for evolutionary optimization of ML pipelines. I contributed to algorithm development and the codebase.",
+        "Open-source framework для evolutionary optimization в ML pipelines. Участвовал в разработке алгоритмов и развитии кодовой базы."
+      ]
+    },
+    {
+      "title": "Topological regularization",
+      "url": "https://github.com/donRumata03/topological-regularization",
+      "text": [
+        "A course project exploring persistent-homology-based regularization for machine learning.",
+        "Курсовой проект: regularization в ML с использованием persistent homology."
+      ]
+    },
+    {
+      "title": "Painter",
+      "url": "https://github.com/donRumata03/Painter",
+      "text": [
+        "Optimization-based image vectorization for a robotic painting project.",
+        "Векторизация изображений методами оптимизации для проекта robotic painting."
+      ]
+    },
+    {
+      "title": "Chord Approximator",
+      "url": "https://github.com/donRumata03/Chord_approximator",
+      "text": [
+        "Automatic chord estimation with music theory, Fourier analysis and heuristic optimization.",
+        "Автоматический подбор аккордов на основе теории музыки, Fourier analysis и heuristic optimization."
+      ]
+    },
+    {
+      "title": "Notion → Google Calendar Sync",
+      "url": "https://github.com/donRumata03/notion-gcal-sync",
+      "text": [
+        "A free, self-hosted tool to sync dates from Notion databases into Google Calendar.",
+        "Self-hosted сервис для синхронизации дат из баз Notion в Google Calendar."
+      ]
+    },
+    {
+      "title": "VPN Lab",
+      "url": "https://github.com/donRumata03/vpn-lab",
+      "private": true,
+      "text": [
+        "Experiments with VPNs, network configurations and reproducible testing workflows.",
+        "Эксперименты с VPN, сетевыми конфигурациями и воспроизводимыми тестами."
+      ]
+    }
+  ]
 }
