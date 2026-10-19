@@ -15,11 +15,10 @@ jobs:
       - name: Restore verified source and original PDF
         run: |
           python3 - <<'PY'
-          import base64, hashlib, io, lzma, pathlib, tarfile
-          parts = sorted(pathlib.Path('_bootstrap').glob('part-*.b64'))
-          assert len(parts) == 5, 'Incomplete website bundle'
-          encoded = ''.join(p.read_text().strip() for p in parts)
-          packed = base64.b64decode(encoded, validate=True)
+          import hashlib, io, lzma, pathlib, tarfile
+          parts = sorted(pathlib.Path('_bootstrap').glob('part-*.bin'))
+          assert len(parts) == 9, 'Incomplete website bundle'
+          packed = b''.join(p.read_bytes() for p in parts)
           assert hashlib.sha256(packed).hexdigest() == '5c34599bb432941d77d90530f513b4b67a6042313798ba181be5f60429aa2a79', 'Bundle checksum mismatch'
           with tarfile.open(fileobj=io.BytesIO(lzma.decompress(packed)), mode='r:') as archive:
               archive.extractall('.', filter='data')
