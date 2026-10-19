@@ -35,6 +35,19 @@ for filename,lang in [('index.html','en'),('ru/index.html','ru')]:
  assert 'https://github.com/donRumata03/notion-gcal-sync' in text
  assert 'https://github.com/donRumata03/vpn-lab' in text
  assert 'PowerfulGA' not in text
+ assert 'id="experience"' not in text and 'href="#experience"' not in text
+ assert 'Research &amp; engineering' not in text and 'Research & engineering, in parallel' not in text
+ assert 'Physics-informed ML' in text
+ assert 'optimization and evolutionary computation' not in text and 'protein design, оптимизация' not in text
+ assert 'Q1 Journal' in text if lang=='en' else 'Журнал Q1' in text
+ assert 'Nirvana' in text and 'Smells Like Teen Spirit' in text
+ assert ('English Speaking Club' in text and ('Провожу занятия' in text if lang=='ru' else 'I host sessions' in text))
+ assert 'news.itmo.ru/'+lang+'/news/12692/' in text
+ assert 'news.itmo.ru/'+lang+'/education/students/news/10496/' in text
+ assert 'gr-oborona.ru/pub/rock/egor_letov_stihi.html' in text
+ assert ('KOMETEH' if lang=='en' else 'КОМЕТЕХ') in text
+ assert text.count('https://kometeh.ru/')==1
+
  assert (('Приватный репозиторий · публикация планируется' in text) if lang=='ru' else ('Private repository · public release planned' in text))
 
  start=text.index('<script type="application/ld+json">')+len('<script type="application/ld+json">')

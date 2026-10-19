@@ -1,6 +1,6 @@
 # Vladimir Latypov / Владимир Латыпов
 
-Personal research, engineering and teaching website.
+Personal ML research and teaching website, with a broader selection of personal interests and public projects.
 
 - English: https://donrumata03.github.io/
 - Russian: https://donrumata03.github.io/ru/
@@ -9,7 +9,7 @@ Personal research, engineering and teaching website.
 
 This first version deliberately has no JavaScript framework, package dependencies, analytics or tracking. The published site is ordinary static HTML/CSS with a small optional theme switcher. All content and links are usable without JavaScript.
 
-1. Edit `content.json` for publications, experience, teaching, interests and profile links. Bilingual text arrays are ordered `[English, Russian]`.
+1. Edit `content.json` for publications, projects, teaching, interests, media references and profile links. Bilingual text arrays are ordered `[English, Russian]`.
 2. Introductory/UI text and layout live in `scripts/build.py`; design tokens and responsive rules in `assets/style.css`.
 3. Run `python3 scripts/build.py` and `python3 scripts/check.py`.
 4. Preview with `python3 -m http.server 8000` and open http://localhost:8000/.
@@ -38,3 +38,10 @@ Still requiring owner-specific information/actions:
 ## Checks
 
 `scripts/check.py` validates generated languages, anchors, local links, structured data, contact links, sitemap parsing and original PDF integrity. Responsive rendering was checked in Chromium at widths 320, 390, 768 and 1440 pixels for both languages, with no horizontal overflow or JavaScript errors. Offline rendering used the portrait fallback; it does not verify external link availability.
+
+## Editorial decisions (October 2026)
+
+- The on-page job-history section has deliberately been removed. The original CV PDF still records all positions, including the ongoing engineering job at KOMETEH. The homepage mentions that role only in its short introduction.
+- Research interests now emphasize generative models, RL fine-tuning, protein design, Physics-informed ML and evolutionary computation.
+- An ITMO.STARS 2021 recognition and ITMO.NEWS 2022 article appear as a compact media mention with language-appropriate links, not a News section.
+- The homepage epigraph is an original paraphrase inspired by Yegor Letov's “I Am Illusory”, linking to the artist's published text. It is not a reproduction or a translation of protected lyrics; the Nirvana reference in the music section is likewise a prose allusion rather than a lyric quote.
