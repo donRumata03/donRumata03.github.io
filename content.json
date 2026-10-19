@@ -287,5 +287,20 @@
         "https://news.itmo.ru/ru/news/12692/"
       ]
     ]
+  },
+  "epigraph": {
+    "text": [
+      "Within your normalcy lives someone like me; around your joys, jackboots march; amid your freedom, they kill and scream!",
+      "Внутри твоей нормальности живёт такой, как я; вокруг твоих востоpгов маpшиpуют сапоги, среди твоей свободы убивают и кричат!"
+    ],
+    "source": [
+      "“I Am Illusory”",
+      "«Я иллюзорен»"
+    ],
+    "credit": [
+      "© Yegor Letov, Russian musician",
+      "© Егор Летов"
+    ],
+    "url": "https://www.gr-oborona.ru/pub/rock/egor_letov_stihi.html"
   }
 }
