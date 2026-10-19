@@ -15,7 +15,7 @@ def build(i):
  def tr(en,ru):return [en,ru][i]
  name=tr('Vladimir Latypov','Владимир Латыпов');alt=tr('Владимир Латыпов','Vladimir Latypov')
  title=name+' · '+alt+' | '+tr('ML Researcher','Исследователь ML')
- desc=tr('Vladimir Latypov / Владимир Латыпов. ML researcher at BayesGroup, HSE × YSDA master's student. Generative modeling, publications, teaching, and personal projects.','Владимир Латыпов / Vladimir Latypov. ML researcher в BayesGroup, магистрант ВШЭ × ШАД. Generative modeling, публикации, преподавание и личные проекты.')
+ desc=tr('Vladimir Latypov / Владимир Латыпов. ML researcher at BayesGroup, HSE × YSDA master’s student. Generative modeling, publications, teaching, and personal projects.','Владимир Латыпов / Vladimir Latypov. ML researcher в BayesGroup, магистрант ВШЭ × ШАД. Generative modeling, публикации, преподавание и личные проекты.')
  cv=pre+'assets/vladimir-latypov-cv.pdf'
  nav=['research','teaching','beyond','contact'];labels=tr(['Research','Teaching','Beyond research','Links'],['Исследования','Преподавание','Вне работы','Ссылки'])
  schema={'@context':'https://schema.org','@type':'ProfilePage','url':BASE+path,'inLanguage':lang,'mainEntity':{'@type':'Person','@id':BASE+'/#person','name':'Vladimir Latypov','alternateName':['Владимир Латыпов','Латыпов Владимир','donRumata03'],'url':BASE+'/','image':'https://avatars.githubusercontent.com/u/49616375?v=4','email':'mailto:donrumata03@gmail.com','telephone':'+79995163856','contactPoint':{'@type':'ContactPoint','contactType':'preferred contact','url':'https://t.me/donRumata03'},'sameAs':[x[1] for x in D['profiles']]}}
