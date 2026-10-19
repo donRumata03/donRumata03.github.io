@@ -28,6 +28,15 @@ for filename,lang in [('index.html','en'),('ru/index.html','ru')]:
  assert 'https://www.linkedin.com/in/don-rumata-558842353/' in text
  assert ('Дисклеймер:' in text)==(lang=='ru')
  assert 'Делиться тем, что изучаю' not in text
+ assert 'FlowDraft: Flow-Map Drafting for Lossless Parallel Decoding' in text
+ assert 'Categorical Iterative Proportional Fitting via Discrete Diffusion Models' in text
+ assert 'https://github.com/donRumata03/topological-regularization' in text
+ assert 'https://github.com/donRumata03/Chord_approximator' in text
+ assert 'https://github.com/donRumata03/notion-gcal-sync' in text
+ assert 'https://github.com/donRumata03/vpn-lab' in text
+ assert 'PowerfulGA' not in text
+ assert (('Приватный репозиторий · публикация планируется' in text) if lang=='ru' else ('Private repository · public release planned' in text))
+
  start=text.index('<script type="application/ld+json">')+len('<script type="application/ld+json">')
  json.loads(text[start:text.index('</script>',start)])
  for ref in p.refs:

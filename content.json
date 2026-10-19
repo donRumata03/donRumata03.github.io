@@ -31,6 +31,22 @@
   ],
   "papers": [
     {
+      "title": "FlowDraft: Flow-Map Drafting for Lossless Parallel Decoding",
+      "url": "https://www.skoltech.ru/en/news/summer-school-research-collaborations-skoltech-smiles-2026-concludes-suzhou",
+      "meta": [
+        "2026 · SMILES research project · Alfa-Bank Award",
+        "2026 · Проект SMILES · Приз Альфа-Банка"
+      ],
+      "text": [
+        "With Stepan Pavlenko and Yaroslav Pelekhov, I worked on flow-map drafting for lossless parallel decoding. The project received SMILES 2026's Alfa-Bank Award. A public paper is not yet linked here.",
+        "Вместе со Степаном Павленко и Ярославом Пелеховым работал над flow-map drafting для lossless parallel decoding. Проект получил приз Альфа-Банка на SMILES 2026. Пока ссылка ведёт на описание проекта, а не на текст статьи."
+      ],
+      "link_label": [
+        "Project announcement",
+        "Описание проекта"
+      ]
+    },
+    {
       "title": "On Approaches to Building Surrogate ODE Models for Diffusion Bridges",
       "url": "https://arxiv.org/abs/2512.12671",
       "meta": [
@@ -52,6 +68,22 @@
       "text": [
         "A tailored neural architecture search algorithm and new convolutional KAN layers. My bachelor's thesis, awarded Best Diploma at ITMO and presented at MathAI '25.",
         "Разработал метод Neural Architecture Search (NAS) и новые convolutional KAN layers. По этой теме защитил бакалаврскую ВКР, получившую награду Best Diploma at ITMO, и выступил на MathAI ’25."
+      ]
+    },
+    {
+      "title": "Categorical Iterative Proportional Fitting via Discrete Diffusion Models",
+      "url": "https://box.skoltech.ru/index.php/s/LEeQhaRW6GYYuAa",
+      "meta": [
+        "2025 · SMILES School Projects Proceedings",
+        "2025 · Сборник работ SMILES"
+      ],
+      "text": [
+        "Co-developed C-IPF, a discrete-diffusion approach to Schrödinger bridges between categorical distributions. Published in the SMILES School Projects Proceedings 2025.",
+        "В составе команды разработал C-IPF — подход к discrete Schrödinger bridges на основе discrete diffusion models. Статья опубликована в SMILES School Projects Proceedings 2025."
+      ],
+      "link_label": [
+        "Paper (PDF)",
+        "Статья (PDF)"
       ]
     },
     {
@@ -268,6 +300,57 @@
       "text": [
         "DIY electronics, public speaking, travel and learning new things. I publish study notes and recordings from the economics club.",
         "Люблю DIY-электронику, путешествия, публичные выступления и пробовать новое. Публикую учебные конспекты и записи встреч экономического клуба."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "GOLEM",
+      "url": "https://github.com/aimclub/GOLEM",
+      "text": [
+        "An open-source framework for evolutionary optimization of ML pipelines. I contributed to algorithm development and the codebase.",
+        "Open-source framework для evolutionary optimization в ML pipelines. Участвовал в разработке алгоритмов и развитии кодовой базы."
+      ]
+    },
+    {
+      "title": "Topological regularization",
+      "url": "https://github.com/donRumata03/topological-regularization",
+      "text": [
+        "A course project exploring persistent-homology-based regularization for machine learning.",
+        "Курсовой проект: regularization в ML с использованием persistent homology."
+      ]
+    },
+    {
+      "title": "Painter",
+      "url": "https://github.com/donRumata03/Painter",
+      "text": [
+        "Optimization-based image vectorization for a robotic painting project.",
+        "Векторизация изображений методами оптимизации для проекта robotic painting."
+      ]
+    },
+    {
+      "title": "Chord Approximator",
+      "url": "https://github.com/donRumata03/Chord_approximator",
+      "text": [
+        "Automatic chord estimation with music theory, Fourier analysis and heuristic optimization.",
+        "Автоматический подбор аккордов на основе теории музыки, Fourier analysis и heuristic optimization."
+      ]
+    },
+    {
+      "title": "Notion → Google Calendar Sync",
+      "url": "https://github.com/donRumata03/notion-gcal-sync",
+      "text": [
+        "A free, self-hosted tool to sync dates from Notion databases into Google Calendar.",
+        "Self-hosted сервис для синхронизации дат из баз Notion в Google Calendar."
+      ]
+    },
+    {
+      "title": "VPN Lab",
+      "url": "https://github.com/donRumata03/vpn-lab",
+      "private": true,
+      "text": [
+        "Experiments with VPNs, network configurations and reproducible testing workflows.",
+        "Эксперименты с VPN, сетевыми конфигурациями и воспроизводимыми тестами."
       ]
     }
   ]

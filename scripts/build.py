@@ -27,8 +27,14 @@ def build(i):
  def section(key,num,heading,intro=''):
   return f'<section class="section" id="{key}" aria-labelledby="{key}-heading"><p class="eyebrow">0{num} / {labels[nav.index(key)]}</p><h2 id="{key}-heading">{heading}</h2>'+ (f'<p class="section-intro">{intro}</p>' if intro else '')
  s+=section('research',1,tr('Selected work','Избранные работы'),tr('My current focus is RL alignment of latent diffusion language models. My broader interests include protein design, optimization and evolutionary computation.','Сейчас занимаюсь RL fine-tuning и alignment для latent diffusion language models. Другие интересы: protein design, оптимизация и evolutionary computation.'))
- for x in D['papers']:s+=f'<article class="work"><div class="meta">{x["meta"][i]}</div><div><h3><a href="{x["url"]}">{ESC(x["title"])}</a></h3><p>{ESC(x["text"][i])}</p>{links([[tr("Read the paper","Открыть статью"),x["url"]]])}</div></article>'
- s+=f'<p class="outro">{a(tr("More publications on Google Scholar","Другие публикации в Google Scholar"),D["profiles"][1][1])}</p><div class="project-strip"><span class="eyebrow">{tr("Code & projects","Код и проекты")}</span><div>{a("GOLEM","https://github.com/aimclub/GOLEM")} · {a("Painter","https://github.com/donRumata03/Painter")} · {a("PowerfulGA","https://github.com/donRumata03/PowerfulGA")}<p>{tr("Evolutionary optimization, algorithmic painting and a C++ genetic algorithm library.","Эволюционная оптимизация, алгоритмическое рисование и C++-библиотека генетических алгоритмов.")}</p></div></div></section>'
+ for x in D['papers']:
+  label=x.get('link_label',[tr("Read the paper","Открыть статью"),tr("Read the paper","Открыть статью")])[i]
+  s+=f'<article class="work"><div class="meta">{x["meta"][i]}</div><div><h3><a href="{x["url"]}">{ESC(x["title"])}</a></h3><p>{ESC(x["text"][i])}</p>{links([[label,x["url"]]])}</div></article>'
+ s+=f'<p class="outro">{a(tr("More publications on Google Scholar","Другие публикации в Google Scholar"),D["profiles"][1][1])}</p><div class="project-strip"><span class="eyebrow">{tr("Code & projects","Код и проекты")}</span><div class="project-grid">'
+ for x in D['projects']:
+  status=f'<span class="project-status">{tr("Private repository · public release planned","Приватный репозиторий · публикация планируется")}</span>' if x.get('private') else ''
+  s+=f'<article class="project"><h3>{a(x["title"],x["url"])}</h3><p>{ESC(x["text"][i])}</p>{status}</article>'
+ s+='</div></div></section>'
  s+=section('experience',2,tr('Research & engineering, in parallel','Исследования и инженерная работа'),tr('My engineering work continues alongside my academic research. A short timeline is below; the full CV includes projects, awards and skills.','Совмещаю инженерную работу с ML-исследованиями. Ниже — краткая хронология. Подробнее о проектах, наградах и навыках — в CV.'))
  for x in D['experience']:
   org=a(x['org'][i],x['url']) if x.get('url') else ESC(x['org'][i])
