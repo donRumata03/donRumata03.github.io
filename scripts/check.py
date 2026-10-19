@@ -24,6 +24,10 @@ for filename,lang in [('index.html','en'),('ru/index.html','ru')]:
  assert len(p.canonical)==1 and set(p.alternates)=={'en','ru','x-default'}
  assert 'Vladimir Latypov' in text and 'Владимир Латыпов' in text
  assert 'mailto:donrumata03@gmail.com' in text and 'tel:+79995163856' in text
+ assert 'https://t.me/donRumata03' in text and 'https://amdm.ru/users/donRumata03/songs/' in text
+ assert 'https://www.linkedin.com/in/don-rumata-558842353/' in text
+ assert ('Дисклеймер:' in text)==(lang=='ru')
+ assert 'Делиться тем, что изучаю' not in text
  start=text.index('<script type="application/ld+json">')+len('<script type="application/ld+json">')
  json.loads(text[start:text.index('</script>',start)])
  for ref in p.refs:
